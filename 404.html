@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>City Finder Game</title>
     <script>
-      var path = window.location.pathname;
-      window.location.replace('/geo-quest-finder/' + path.split('/').slice(2).join('/'));
+      sessionStorage.redirect = location.href;
     </script>
+    <meta http-equiv="refresh" content="0;URL='/geo-quest-finder/'">
   </head>
   <body></body>
 </html>
